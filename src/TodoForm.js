@@ -16,7 +16,7 @@ function TodoForm({ addTodo }) {
                 <TextField
                     value={value}
                     onChange={handleChange}
-                    margin="0"
+                    margin="normal"
                     label="Add New Todo"
                     fullWidth
                 />
