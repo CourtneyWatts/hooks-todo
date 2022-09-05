@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import UseLocalStorageState from './useLocalStorageState';
 import { v4 as uuidv4 } from 'uuid';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (initialTodos) => {
-    const [todos, setTodos] = useState(initialTodos);
+    const [todos, setTodos] = UseLocalStorageState('todos', initialTodos);
     return {
         todos,
         addTodo: (newTodoText) => {
